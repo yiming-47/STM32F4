@@ -991,11 +991,11 @@ void GPIO_config()
  8000794:	f043 7380 	orr.w	r3, r3, #16777216	; 0x1000000
  8000798:	6013      	str	r3, [r2, #0]
 
-	GPIOD->OSPEEDR|=GPIO_Speed_100MHz << (2 * 1);
+	GPIOD->OSPEEDR|=GPIO_Speed_100MHz << (2 * 12);
  800079a:	4a13      	ldr	r2, [pc, #76]	; (80007e8 <GPIO_config+0x304>)
  800079c:	4b12      	ldr	r3, [pc, #72]	; (80007e8 <GPIO_config+0x304>)
  800079e:	689b      	ldr	r3, [r3, #8]
- 80007a0:	f043 030c 	orr.w	r3, r3, #12
+ 80007a0:	f043 7340 	orr.w	r3, r3, #50331648	; 0x3000000
  80007a4:	6093      	str	r3, [r2, #8]
 
 	GPIOD->ODR |= 1 << 12;

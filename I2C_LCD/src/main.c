@@ -329,7 +329,7 @@ void GPIO_config()
 	// PD12 LCD: RDX
 	GPIOD->MODER|=GPIO_Mode_OUT << (2 * 12);
 
-	GPIOD->OSPEEDR|=GPIO_Speed_100MHz << (2 * 1);
+	GPIOD->OSPEEDR|=GPIO_Speed_100MHz << (2 * 12);
 
 	GPIOD->ODR |= 1 << 12;
 	// PC2 SPI: CS
