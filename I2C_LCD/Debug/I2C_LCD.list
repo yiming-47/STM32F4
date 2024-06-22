@@ -991,18 +991,18 @@ void GPIO_config()
  8000794:	f043 7380 	orr.w	r3, r3, #16777216	; 0x1000000
  8000798:	6013      	str	r3, [r2, #0]
 
-	GPIOD->OSPEEDR|=GPIO_Speed_100MHz << (2 * 13);
+	GPIOD->OSPEEDR|=GPIO_Speed_100MHz << (2 * 1);
  800079a:	4a13      	ldr	r2, [pc, #76]	; (80007e8 <GPIO_config+0x304>)
  800079c:	4b12      	ldr	r3, [pc, #72]	; (80007e8 <GPIO_config+0x304>)
  800079e:	689b      	ldr	r3, [r3, #8]
- 80007a0:	f043 6340 	orr.w	r3, r3, #201326592	; 0xc000000
+ 80007a0:	f043 030c 	orr.w	r3, r3, #12
  80007a4:	6093      	str	r3, [r2, #8]
 
-	GPIOD->ODR |= 1 << 13;
+	GPIOD->ODR |= 1 << 12;
  80007a6:	4a10      	ldr	r2, [pc, #64]	; (80007e8 <GPIO_config+0x304>)
  80007a8:	4b0f      	ldr	r3, [pc, #60]	; (80007e8 <GPIO_config+0x304>)
  80007aa:	695b      	ldr	r3, [r3, #20]
- 80007ac:	f443 5300 	orr.w	r3, r3, #8192	; 0x2000
+ 80007ac:	f443 5380 	orr.w	r3, r3, #4096	; 0x1000
  80007b0:	6153      	str	r3, [r2, #20]
 	// PC2 SPI: CS
 	GPIOC->MODER|= GPIO_Mode_OUT << (2 * 2);
