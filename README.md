@@ -5,7 +5,7 @@
 硬體型號:  
     觸控功能:STMPE811 4線電阻式觸控  
     LCD: ILI9341 
-腳位設置:
+腳位設置:  
     TouchPanel: PA7 (RESET), PA15(TOUCHPANEL_INTERRUPT)  
     LCD: PD13 (DATA_COMMAND_SELECT)  
     USART: PA9, PA10 (只是用來debug與呈現觸控位置)  
